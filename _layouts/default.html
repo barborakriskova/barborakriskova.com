@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Barbora Kriskova</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="main.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+	</head>
+	<body>
+		{% if page.compact %}
+			<header class="small">
+				<nav>
+					<ul>
+						<li><a href="/">HOME</a></li>
+						<li><a href="/portfolio">PORTFOLIO</a></li>
+						<li><a href="/video">VIDEO</a></li>
+						<li><a href="/project">PROJECT</a></li>
+					</ul>
+				</nav>
+			</header>
+		{% else %}
+			<header>
+				<nav>
+					<ul>
+						<li><a href="/">HOME</a></li>
+						<li><a href="/portfolio">PORTFOLIO</a></li>
+						<li><a href="/video">VIDEO</a></li>
+						<li><a href="/project">PROJECT</a></li>
+					</ul>
+				</nav>
+
+				<h1>Photographer</h1>
+
+				<div class="line"></div>
+
+				<p>BARBORA KRISKOVA</p>
+			</header>
+		{% endif %}
+
+		{{ content }}
+
+		<footer>
+			<p class="contact">GET IN TOUCH</p>
+
+			<ul class="footer-icons">
+				<li><a href="https://www.facebook.com/barborka.kriskova" class="icon icon-facebook" target="_blank" rel="noopener"></a></li>
+				<li><a href="mailto:bsk.kriskova@gmail.com" class="icon icon-email"></a></li>
+				<li><a href="https://www.linkedin.com/in/barbora-kriskova-a62690113" class="icon icon-linkedin" target="_blank" rel="noopener"></a></li>
+				<li><a href="https://vimeo.com/user51078105" class="icon icon-vimeo" target="_blank" rel="noopener"></a></li>
+			</ul>
+
+			<p class="copyright">©2016 BARBORA KRISKOVA</p>
+		</footer>
+
+		<script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+	</body>
+</html>

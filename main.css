@@ -1,0 +1,263 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	color: inherit;
+	font-weight: 100;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #444;
+	letter-spacing: 1px;
+}
+
+header {
+	background-image: url('/images/img.jpg');
+	background-size: cover;
+	color: #fff;
+	height: 500px;
+}
+
+header h1 {
+	font-family: 'Megrim', cursive;
+	font-size: 80px;
+	padding-top: 120px;
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        background-position: center center;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    header nav {
+        text-align: center !important;
+        padding-right: 0 !important;
+    }
+
+    header nav ul li a {
+        font-weight: bold;
+    }
+
+    video {
+        width: 100%;
+    }
+}
+
+header p {
+	padding-top: 7px;
+	font-size: 20px;
+	margin-bottom: 80px;
+	text-align: center;
+}
+
+header div.line {
+	width: 630px;
+	height: 1px;
+	background-color: #ccc;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+header li {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+header nav {
+	text-align: right;
+	padding-top: 50px;
+	padding-right: 40px;
+}
+
+footer {
+	padding: 60px;
+	background-image: url('/images/pattern.png');
+	background-position: center right;
+}
+
+footer li {
+	display: inline-block;
+}
+
+footer li a.icon {
+	width: 48px;
+	height: 48px;
+	display: block;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+footer li a.icon-facebook {
+	background-image: url('/images/icons/facebook.png');
+}
+
+footer li a.icon-linkedin {
+	background-image: url('/images/icons/linkedin.png');
+}
+
+footer li a.icon-email {
+	background-image: url('/images/icons/mail.png');
+}
+
+footer li a.icon-vimeo {
+	background-image: url('/images/icons/vimeo.png');
+}
+
+section.about-me p {
+	text-align: center;
+	line-height: 30px;
+	padding-top: 15px;
+}
+
+section.about-me img.me {
+	display: block;
+	width: 100%;
+    max-width: 1000px;
+	margin: 30px auto;
+}
+
+section.about-me h2 {
+	text-align: center;
+	font-weight: 300;
+}
+
+section.about-me p.button a {
+	font-size: 14px;
+	margin-top: 70px;
+	padding: 10px 30px;
+	border-radius: 3px;
+	display: inline-block;
+	font-weight: 300;
+	letter-spacing: 2px;
+	background-color: #f1f1f1
+}
+
+footer .footer-icons {
+	text-align: center;
+}
+
+footer p.contact {
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+footer p.copyright {
+	text-align: center;
+	margin-top: 60px;
+}
+
+section.about-me {
+	background-color: #f1f1f1;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	box-shadow: inset 0 -100px 50px -100px #ccc, inset 0 100px 50px -100px #444;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 100px 50px;
+	position: relative;
+}
+
+.container.small {
+	float: left;
+	width: 425px;
+	padding: 0;
+}
+
+.image-wrapper {
+	width: 1000px;
+	margin: 30px auto;
+	overflow: auto;
+	zoom: 1;
+	background: white;
+	padding: 50px;
+}
+
+header.small {
+	height: 240px;
+}
+
+.container.small.right {
+	margin-left: 25px;
+}
+
+.container.small.left {
+	margin-right: 25px;
+}
+
+.image-wrapper .container:hover .overlay {
+	opacity: 1;
+}
+
+.image-wrapper .container .overlay {
+	display: block;
+	opacity: 0;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100% - 5px);
+	background: rgba(0, 0, 0, 0.3);
+	text-align: center;
+	line-height: 271px;
+	color: white;
+	transition: all 0.5s;
+	font-size: 18px;
+}
+
+@media screen and (max-width: 1000px) {
+	.container, .image-wrapper {
+		max-width: 100%;
+	}
+
+	.image-wrapper {
+		margin: 0;
+	}
+
+	.image-wrapper .container {
+		float: none;
+	}
+
+	.container.small.right, .container.small.left {
+		margin: 20px auto 0 auto;
+	}
+
+	.image-wrapper:nth-child(1n) .container.left {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.line {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	header li {
+		margin-left: 10px;
+	}
+}
+
+.video-iframe {
+	display: block;
+	margin: 0 auto;
+}
